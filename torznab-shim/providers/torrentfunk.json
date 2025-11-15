@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://www.torrentfunk.com/all/torrents/{query}.html",
+  "listSelector": "table.torrent tr",
+  "fields": {
+    "title": { "selector": "a.torrent", "attr": "text" },
+    "detailUrl": { "selector": "a.torrent", "attr": "href" },
+    "seeders": { "selector": "td.seeders", "attr": "text" },
+    "leechers": { "selector": "td.leechers", "attr": "text" },
+    "size": { "selector": "td.size", "attr": "text" }
+  }
+}

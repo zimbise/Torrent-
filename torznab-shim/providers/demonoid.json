@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://www.demonoid.is/files/?category=0&subcategory=0&quality=0&seeded=0&external=2&query={query}",
+  "listSelector": "table.lista2 tr",
+  "fields": {
+    "title": { "selector": "a[href*='details']", "attr": "text" },
+    "detailUrl": { "selector": "a[href*='details']", "attr": "href" },
+    "seeders": { "selector": "td:nth-child(6)", "attr": "text" },
+    "leechers": { "selector": "td:nth-child(7)", "attr": "text" },
+    "size": { "selector": "td:nth-child(5)", "attr": "text" }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://ettvdl.com/torrents-search.php?search={query}",
+  "listSelector": "table.table tr",
+  "fields": {
+    "title": { "selector": "a[href*='torrent/']", "attr": "text" },
+    "detailUrl": { "selector": "a[href*='torrent/']", "attr": "href" },
+    "seeders": { "selector": "td:nth-child(6)", "attr": "text" },
+    "leechers": { "selector": "td:nth-child(7)", "attr": "text" },
+    "size": { "selector": "td:nth-child(5)", "attr": "text" }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://torrentnova.org/search/{query}",
+  "listSelector": "div.result",
+  "fields": {
+    "title": { "selector": "a.title", "attr": "text" },
+    "detailUrl": { "selector": "a.title", "attr": "href" },
+    "seeders": { "selector": ".seeders", "attr": "text" },
+    "leechers": { "selector": ".leechers", "attr": "text" },
+    "size": { "selector": ".size", "attr": "text" }
+  }
+}

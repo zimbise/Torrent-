@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://kickasstorrents.to/usearch/{query}/",
+  "listSelector": "table.data tr",
+  "fields": {
+    "title": { "selector": "a.cellMainLink", "attr": "text" },
+    "detailUrl": { "selector": "a.cellMainLink", "attr": "href" },
+    "seeders": { "selector": "td.green", "attr": "text" },
+    "leechers": { "selector": "td.red", "attr": "text" },
+    "size": { "selector": "td.nobr", "attr": "text" }
+  }
+}

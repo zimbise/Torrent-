@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://www.torrent9.nz/search_torrent/{query}.html",
+  "listSelector": "table.table tr",
+  "fields": {
+    "title": { "selector": "a.titre", "attr": "text" },
+    "detailUrl": { "selector": "a.titre", "attr": "href" },
+    "seeders": { "selector": "td.seeders", "attr": "text" },
+    "leechers": { "selector": "td.leechers", "attr": "text" },
+    "size": { "selector": "td.size", "attr": "text" }
+  }
+}

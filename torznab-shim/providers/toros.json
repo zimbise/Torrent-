@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://toros.co/search/{query}",
+  "listSelector": "div.torrent-row",
+  "fields": {
+    "title": { "selector": "a.torrent-title", "attr": "text" },
+    "detailUrl": { "selector": "a.torrent-title", "attr": "href" },
+    "seeders": { "selector": ".seeders", "attr": "text" },
+    "leechers": { "selector": ".leechers", "attr": "text" },
+    "size": { "selector": ".size", "attr": "text" }
+  }
+}
