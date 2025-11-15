@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://monova.org/search?term={query}",
+  "listSelector": "div.search-list div.row",
+  "fields": {
+    "title": { "selector": "a.title", "attr": "text" },
+    "detailUrl": { "selector": "a.title", "attr": "href" },
+    "seeders": { "selector": ".seeders", "attr": "text" },
+    "leechers": { "selector": ".leechers", "attr": "text" },
+    "size": { "selector": ".size", "attr": "text" }
+  }
+}

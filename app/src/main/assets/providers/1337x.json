@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://1337x.to/search/{query}/1/",
+  "listSelector": "table.table-list tbody tr",
+  "fields": {
+    "title": { "selector": "td.coll-1 a", "attr": "text" },
+    "detailUrl": { "selector": "td.coll-1 a", "attr": "href" },
+    "seeders": { "selector": "td.coll-2", "attr": "text" },
+    "leechers": { "selector": "td.coll-3", "attr": "text" },
+    "size": { "selector": "td.coll-4", "attr": "text" }
+  }
+}

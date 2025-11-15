@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://torrentz2.nz/search?f={query}",
+  "listSelector": "div.results div.row",
+  "fields": {
+    "title": { "selector": "a", "attr": "text" },
+    "detailUrl": { "selector": "a", "attr": "href" },
+    "seeders": { "selector": ".seeders", "attr": "text" },
+    "leechers": { "selector": ".leechers", "attr": "text" },
+    "size": { "selector": ".size", "attr": "text" }
+  }
+}

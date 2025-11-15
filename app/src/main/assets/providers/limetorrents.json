@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://www.limetorrents.lol/search/all/{query}/",
+  "listSelector": "table.table2 tr",
+  "fields": {
+    "title": { "selector": "a", "attr": "text" },
+    "detailUrl": { "selector": "a", "attr": "href" },
+    "seeders": { "selector": "td:nth-child(3)", "attr": "text" },
+    "leechers": { "selector": "td:nth-child(4)", "attr": "text" },
+    "size": { "selector": "td:nth-child(2)", "attr": "text" }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://freetorrent.org/search/{query}",
+  "listSelector": "table.results tr",
+  "fields": {
+    "title": { "selector": "a.title", "attr": "text" },
+    "detailUrl": { "selector": "a.title", "attr": "href" },
+    "seeders": { "selector": "td.seeders", "attr": "text" },
+    "leechers": { "selector": "td.leechers", "attr": "text" },
+    "size": { "selector": "td.size", "attr": "text" }
+  }
+}

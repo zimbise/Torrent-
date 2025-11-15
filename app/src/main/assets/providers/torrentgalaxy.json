@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://torrentgalaxy.to/torrents.php?search={query}",
+  "listSelector": "div.tgxtable div.tgxtablerow",
+  "fields": {
+    "title": { "selector": "a[href*='torrent/']", "attr": "text" },
+    "detailUrl": { "selector": "a[href*='torrent/']", "attr": "href" },
+    "seeders": { "selector": ".tgxtablecell:nth-child(6)", "attr": "text" },
+    "leechers": { "selector": ".tgxtablecell:nth-child(7)", "attr": "text" },
+    "size": { "selector": ".tgxtablecell:nth-child(5)", "attr": "text" }
+  }
+}

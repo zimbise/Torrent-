@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://openpirate.org/search.php?q={query}",
+  "listSelector": "table#searchResult tr",
+  "fields": {
+    "title": { "selector": "a.detLink", "attr": "text" },
+    "detailUrl": { "selector": "a.detLink", "attr": "href" },
+    "seeders": { "selector": "td:nth-child(3)", "attr": "text" },
+    "leechers": { "selector": "td:nth-child(4)", "attr": "text" },
+    "size": { "selector": ".detDesc", "attr": "text" }
+  }
+}

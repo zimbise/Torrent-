@@ -1,0 +1,11 @@
+{
+  "searchUrl": "http://rutor.info/search/{query}",
+  "listSelector": "table#index tbody tr",
+  "fields": {
+    "title": { "selector": "a[href*='/torrent/']", "attr": "text" },
+    "detailUrl": { "selector": "a[href*='/torrent/']", "attr": "href" },
+    "seeders": { "selector": "td:nth-child(5)", "attr": "text" },
+    "leechers": { "selector": "td:nth-child(6)", "attr": "text" },
+    "size": { "selector": "td:nth-child(4)", "attr": "text" }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://www.torrentdownload.info/search?q={query}+mp3",
+  "listSelector": "div.results div.row",
+  "fields": {
+    "title": { "selector": "a.title", "attr": "text" },
+    "detailUrl": { "selector": "a.title", "attr": "href" },
+    "seeders": { "selector": ".seeders", "attr": "text" },
+    "leechers": { "selector": ".leechers", "attr": "text" },
+    "size": { "selector": ".size", "attr": "text" }
+  }
+}

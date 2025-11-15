@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://www.torrenthound.com/search/{query}",
+  "listSelector": "table.results tr",
+  "fields": {
+    "title": { "selector": "a.torrent", "attr": "text" },
+    "detailUrl": { "selector": "a.torrent", "attr": "href" },
+    "seeders": { "selector": "td.seeders", "attr": "text" },
+    "leechers": { "selector": "td.leechers", "attr": "text" },
+    "size": { "selector": "td.size", "attr": "text" }
+  }
+}

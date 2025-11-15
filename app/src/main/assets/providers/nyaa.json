@@ -1,0 +1,11 @@
+{
+  "searchUrl": "https://nyaa.si/?f=0&c=0_0&q={query}",
+  "listSelector": "table.torrent-list tbody tr",
+  "fields": {
+    "title": { "selector": "td:nth-child(2) a", "attr": "text" },
+    "detailUrl": { "selector": "td:nth-child(2) a", "attr": "href" },
+    "seeders": { "selector": "td:nth-child(6)", "attr": "text" },
+    "leechers": { "selector": "td:nth-child(7)", "attr": "text" },
+    "size": { "selector": "td:nth-child(4)", "attr": "text" }
+  }
+}
