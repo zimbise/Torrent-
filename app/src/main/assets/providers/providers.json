@@ -1,65 +1,304 @@
 {
   "providers": [
-    { "name": "1337x", "file": "1337x.json" },
-    { "name": "rarbg", "file": "rarbg.json" },
-    { "name": "nyaa", "file": "nyaa.json" },
-    { "name": "torrentgalaxy", "file": "torrentgalaxy.json" },
-    { "name": "rutor", "file": "rutor.json" },
-    { "name": "skytorrents", "file": "skytorrents.json" },
-    { "name": "openpirate", "file": "openpirate.json" },
-    { "name": "tpbmirror", "file": "tpbmirror.json" },
-    { "name": "ettvmirror", "file": "ettvmirror.json" },
-    { "name": "toros", "file": "toros.json" },
-    { "name": "torrentbit", "file": "torrentbit.json" },
-    { "name": "torrentdownload", "file": "torrentdownload.json" },
-    { "name": "zillaclub", "file": "zillaclub.json" },
-    { "name": "torrentio", "file": "torrentio.json" },
-    { "name": "ilcorsaronero", "file": "ilcorsaronero.json" },
-    { "name": "torrent9", "file": "torrent9.json" },
-    { "name": "yggtorrent", "file": "yggtorrent.json" },
-    { "name": "cpasbien", "file": "cpasbien.json" },
-    { "name": "torrentreactor", "file": "torrentreactor.json" },
-    { "name": "torrentdownloadmp3", "file": "torrentdownloadmp3.json" },
-    { "name": "rockbox", "file": "rockbox.json" },
-    { "name": "freetorrent", "file": "freetorrent.json" },
-    { "name": "rarbgaccess", "file": "rarbgaccess.json" },
-    { "name": "torrentsiwa", "file": "torrentsiwa.json" },
-    { "name": "torrentroom", "file": "torrentroom.json" },
-
-    { "name": "limetorrents", "file": "limetorrents.json" },
-    { "name": "monova", "file": "monova.json" },
-    { "name": "torrentfunk", "file": "torrentfunk.json" },
-    { "name": "bitsnoop", "file": "bitsnoop.json" },
-    { "name": "extratorrent", "file": "extratorrent.json" },
-    { "name": "kickass", "file": "kickass.json" },
-    { "name": "demonoid", "file": "demonoid.json" },
-    { "name": "torrentproject", "file": "torrentproject.json" },
-    { "name": "seedpeer", "file": "seedpeer.json" },
-    { "name": "torrenthound", "file": "torrenthound.json" },
-    { "name": "torrentdownloads", "file": "torrentdownloads.json" },
-    { "name": "torrentcore", "file": "torrentcore.json" },
-    { "name": "torrentquest", "file": "torrentquest.json" },
-    { "name": "torrentbee", "file": "torrentbee.json" },
-    { "name": "torrentus", "file": "torrentus.json" },
-    { "name": "torrentking", "file": "torrentking.json" },
-    { "name": "torrentmonster", "file": "torrentmonster.json" },
-    { "name": "torrentcrazy", "file": "torrentcrazy.json" },
-    { "name": "torrentz2", "file": "torrentz2.json" },
-    { "name": "torrentparadise", "file": "torrentparadise.json" },
-    { "name": "torrentindex", "file": "torrentindex.json" },
-    { "name": "torrentfiles", "file": "torrentfiles.json" },
-    { "name": "torrentvault", "file": "torrentvault.json" },
-    { "name": "torrentbase", "file": "torrentbase.json" },
-    { "name": "torrentcentral", "file": "torrentcentral.json" },
-    { "name": "torrentplanet", "file": "torrentplanet.json" },
-    { "name": "torrentsearch", "file": "torrentsearch.json" },
-    { "name": "torrentmatrix", "file": "torrentmatrix.json" },
-    { "name": "torrentzone", "file": "torrentzone.json" },
-    { "name": "torrentcity", "file": "torrentcity.json" },
-    { "name": "torrentworld", "file": "torrentworld.json" },
-    { "name": "torrentbay", "file": "torrentbay.json" },
-    { "name": "torrentforest", "file": "torrentforest.json" },
-    { "name": "torrentcloud", "file": "torrentcloud.json" },
-    { "name": "torrentnova", "file": "torrentnova.json" }
+    {
+      "name": "1337x",
+      "file": "1337x.json",
+      "enabled": true
+    },
+    {
+      "name": "rarbg",
+      "file": "rarbg.json",
+      "enabled": true
+    },
+    {
+      "name": "nyaa",
+      "file": "nyaa.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentgalaxy",
+      "file": "torrentgalaxy.json",
+      "enabled": true
+    },
+    {
+      "name": "rutor",
+      "file": "rutor.json",
+      "enabled": true
+    },
+    {
+      "name": "skytorrents",
+      "file": "skytorrents.json",
+      "enabled": true
+    },
+    {
+      "name": "openpirate",
+      "file": "openpirate.json",
+      "enabled": true
+    },
+    {
+      "name": "tpbmirror",
+      "file": "tpbmirror.json",
+      "enabled": true
+    },
+    {
+      "name": "ettvmirror",
+      "file": "ettvmirror.json",
+      "enabled": true
+    },
+    {
+      "name": "toros",
+      "file": "toros.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentbit",
+      "file": "torrentbit.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentdownload",
+      "file": "torrentdownload.json",
+      "enabled": true
+    },
+    {
+      "name": "zillaclub",
+      "file": "zillaclub.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentio",
+      "file": "torrentio.json",
+      "enabled": true
+    },
+    {
+      "name": "ilcorsaronero",
+      "file": "ilcorsaronero.json",
+      "enabled": true
+    },
+    {
+      "name": "torrent9",
+      "file": "torrent9.json",
+      "enabled": true
+    },
+    {
+      "name": "yggtorrent",
+      "file": "yggtorrent.json",
+      "enabled": true
+    },
+    {
+      "name": "cpasbien",
+      "file": "cpasbien.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentreactor",
+      "file": "torrentreactor.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentdownloadmp3",
+      "file": "torrentdownloadmp3.json",
+      "enabled": true
+    },
+    {
+      "name": "rockbox",
+      "file": "rockbox.json",
+      "enabled": true
+    },
+    {
+      "name": "freetorrent",
+      "file": "freetorrent.json",
+      "enabled": true
+    },
+    {
+      "name": "rarbgaccess",
+      "file": "rarbgaccess.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentsiwa",
+      "file": "torrentsiwa.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentroom",
+      "file": "torrentroom.json",
+      "enabled": true
+    },
+    {
+      "name": "limetorrents",
+      "file": "limetorrents.json",
+      "enabled": true
+    },
+    {
+      "name": "monova",
+      "file": "monova.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentfunk",
+      "file": "torrentfunk.json",
+      "enabled": true
+    },
+    {
+      "name": "bitsnoop",
+      "file": "bitsnoop.json",
+      "enabled": true
+    },
+    {
+      "name": "extratorrent",
+      "file": "extratorrent.json",
+      "enabled": true
+    },
+    {
+      "name": "kickass",
+      "file": "kickass.json",
+      "enabled": true
+    },
+    {
+      "name": "demonoid",
+      "file": "demonoid.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentproject",
+      "file": "torrentproject.json",
+      "enabled": true
+    },
+    {
+      "name": "seedpeer",
+      "file": "seedpeer.json",
+      "enabled": true
+    },
+    {
+      "name": "torrenthound",
+      "file": "torrenthound.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentdownloads",
+      "file": "torrentdownloads.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentcore",
+      "file": "torrentcore.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentquest",
+      "file": "torrentquest.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentbee",
+      "file": "torrentbee.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentus",
+      "file": "torrentus.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentking",
+      "file": "torrentking.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentmonster",
+      "file": "torrentmonster.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentcrazy",
+      "file": "torrentcrazy.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentz2",
+      "file": "torrentz2.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentparadise",
+      "file": "torrentparadise.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentindex",
+      "file": "torrentindex.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentfiles",
+      "file": "torrentfiles.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentvault",
+      "file": "torrentvault.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentbase",
+      "file": "torrentbase.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentcentral",
+      "file": "torrentcentral.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentplanet",
+      "file": "torrentplanet.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentsearch",
+      "file": "torrentsearch.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentmatrix",
+      "file": "torrentmatrix.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentzone",
+      "file": "torrentzone.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentcity",
+      "file": "torrentcity.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentworld",
+      "file": "torrentworld.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentbay",
+      "file": "torrentbay.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentforest",
+      "file": "torrentforest.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentcloud",
+      "file": "torrentcloud.json",
+      "enabled": true
+    },
+    {
+      "name": "torrentnova",
+      "file": "torrentnova.json",
+      "enabled": true
+    }
   ]
 }

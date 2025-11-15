@@ -13,12 +13,8 @@ const PORT = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// ✅ Load providers from app repo assets
 const providersPath = path.join(process.env.HOME, 'torrent-search-app/app/src/main/assets/providers');
-
-const registry = JSON.parse(
-  fs.readFileSync(path.join(providersPath, 'providers.json'), 'utf8')
-).providers;
+const registry = JSON.parse(fs.readFileSync(path.join(providersPath, 'providers.json'), 'utf8')).providers;
 
 function parseHtml(html, config) {
   const $ = cheerio.load(html);
@@ -40,7 +36,7 @@ async function searchProvider(p, query) {
   try {
     const config = JSON.parse(fs.readFileSync(path.join(providersPath, p.file), 'utf8'));
     const url = config.searchUrl.replace('{query}', encodeURIComponent(query));
-    const resp = await fetch(url, { headers: config.headers || {} });
+    const resp = await fetch(url, { headers: config.headers || { "User-Agent": "Mozilla/5.0" } });
     const text = await resp.text();
 
     if (config.type === 'xml') {
@@ -65,22 +61,13 @@ async function searchProvider(p, query) {
 async function searchAllProviders(query) {
   const results = [];
   for (const p of registry) {
-    if (p.enabled !== false) { // ✅ respect toggle flag
+    if (p.enabled !== false) {
       const parsed = await searchProvider(p, query);
       results.push(...parsed);
     }
   }
   return results;
 }
-
-// ✅ Toggle endpoint
-app.post('/api/v2.0/providers/toggle', (req, res) => {
-  const { name, enabled } = req.body;
-  const provider = registry.find(p => p.name === name);
-  if (!provider) return res.status(404).json({ error: 'Provider not found' });
-  provider.enabled = enabled;
-  res.json({ message: `${name} set to ${enabled}` });
-});
 
 app.get('/api/v2.0/indexers/all/results', async (req, res) => {
   const q = req.query.q;
